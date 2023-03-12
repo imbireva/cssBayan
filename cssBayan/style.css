@@ -98,26 +98,11 @@ img {
   color: #424949;
 }
 
-.accordion:hover,
-.accordion:hover .label {
-  color: #424949;
-  cursor: pointer;
-}
-
-.accordion:hover .label__header .icon {
-  display: block;
-}
-
-.label:hover .label__body {
-  display: flex;
-}
-
 #radio-1:checked ~ .label_1 .icon,
 #radio-2:checked ~ .label_2 .icon,
 #radio-3:checked ~ .label_3 .icon,
 #radio-4:checked ~ .label_4 .icon,
-#radio-5:checked ~ .label_5 .icon,
-.label:hover .icon {
+#radio-5:checked ~ .label_5 .icon {
   background-image: url(./assets/svg/cross.svg);
 }
 
@@ -141,5 +126,28 @@ img {
   }
   img {
     width: 90%;
+  }
+}
+
+@media (hover: none) {
+  .icon {
+    display: block;
+  }
+}
+
+@media (hover: hover) {
+  .accordion:hover,
+  .accordion:hover .label {
+    color: #424949;
+    cursor: pointer;
+  }
+  .accordion:hover .label__header .icon {
+    display: block;
+  }
+  .label:hover .label__body {
+    display: flex;
+  }
+  .label:hover .icon {
+    background-image: url(./assets/svg/cross.svg);
   }
 }
