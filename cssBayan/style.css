@@ -86,3 +86,11 @@ img {
 #radio-5:checked ~ .label .label__body_5 {
   display: flex;
 }
+
+#radio-1:checked ~ .label_1,
+#radio-2:checked ~ .label_2,
+#radio-3:checked ~ .label_3,
+#radio-4:checked ~ .label_4,
+#radio-5:checked ~ .label_5 {
+  color: #424949;
+}
