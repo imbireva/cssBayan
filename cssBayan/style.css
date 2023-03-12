@@ -76,3 +76,13 @@ input {
 img {
   width: 60%;
 }
+
+/* Accordion behavior */
+
+#radio-1:checked ~ .label .label__body_1,
+#radio-2:checked ~ .label .label__body_2,
+#radio-3:checked ~ .label .label__body_3,
+#radio-4:checked ~ .label .label__body_4,
+#radio-5:checked ~ .label .label__body_5 {
+  display: flex;
+}
