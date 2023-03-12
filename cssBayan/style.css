@@ -20,10 +20,18 @@ body {
 .wrapper {
   max-width: 80%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.wrapper_header {
+  padding: 2rem 0;
+}
+
+.wrapper_main {
+  padding: 0 0 2rem;
 }
 
 h1 {
