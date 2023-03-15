@@ -90,7 +90,8 @@ input:checked ~ .label {
   transition: opacity .3s ease-in-out;
 }
 
-input:checked ~ .label .icon {
+input:checked ~ .label .icon,
+.label:hover .icon {
   background-image: url(./assets/svg/cross.svg);
 }
 
